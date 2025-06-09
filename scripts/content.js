@@ -42,7 +42,6 @@ function parseImage(site) {
 
   const img_urls = [];
   for (const i in imgs) {
-    console.log(imgs[i].src);
     // url格式化
     const url = formatUrl(imgs[i].src);
     if (!url) {
@@ -56,7 +55,6 @@ function parseImage(site) {
     img_urls.push(url);
   }
 
-  console.log("图片列表", img_urls);
   return img_urls;
 }
 
