@@ -41,9 +41,9 @@ function parseImage(site) {
   }
 
   const img_urls = [];
-  for (const i in imgs) {
+  for (const img of imgs) {
     // url格式化
-    const url = formatUrl(imgs[i].src);
+    const url = formatUrl(img.src);
     if (!url) {
       continue;
     }
